@@ -1,7 +1,6 @@
 FROM ruby:alpine
 MAINTAINER "冯宇<yu.feng@shifudao.com>"
 
-RUN gem sources --add https://ruby.taobao.org/
 RUN apk update && \
     apk add make gcc g++ icu-libs icu-dev && \
     gem install gollum redcarpet org-ruby && \
