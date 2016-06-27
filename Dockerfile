@@ -12,4 +12,4 @@ VOLUME /wiki
 WORKDIR /wiki
 EXPOSE 4567
 
-CMD ["gollum"]
+CMD ["gollum", "--allow-uploads", "page"]
